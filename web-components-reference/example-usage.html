@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Reference Animation - Usage Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #1e1e2e 0%, #2d1b3d 100%);
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #a78bfa;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .main-content {
+            flex: 1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 12px;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(20px);
+            padding: 16px 24px;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        button:hover::before {
+            left: 100%;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.5);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        button.clear {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        button.reset {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
+
+        .verse-node {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .verse-node:hover circle {
+            r: 35;
+            filter: drop-shadow(0 0 15px rgba(167, 139, 250, 0.8));
+        }
+
+        .verse-label {
+            pointer-events: none;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .controls {
+                flex-direction: column;
+                width: 90%;
+                max-width: 300px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px 16px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Cross Reference Visualization</h1>
+            <p class="subtitle">Click any two verses to create an animated connection</p>
+        </div>
+
+        <div class="main-content">
+            <svg id="canvas" viewBox="0 0 1200 800">
+                <defs>
+                    <radialGradient id="verseGradient">
+                        <stop offset="0%" stop-color="#a78bfa"/>
+                        <stop offset="100%" stop-color="#7c3aed"/>
+                    </radialGradient>
+                </defs>
+                <g id="connections"></g>
+                <g id="verses"></g>
+            </svg>
+
+            <div class="controls">
+                <button id="animate1">John → Romans</button>
+                <button id="animate2">Genesis → Revelation</button>
+                <button id="animate3">Psalm → Matthew</button>
+                <button class="clear" id="clearBtn">Clear All</button>
+                <button class="reset" id="resetBtn">Reset View</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { CrossReferenceAnimator, Easing, Utils } from './animation-utils.js';
+
+        // ==================== Configuration ====================
+        const verses = [
+            { id: 'john', x: 300, y: 200, reference: 'John 3:16' },
+            { id: 'romans', x: 900, y: 250, reference: 'Romans 5:8' },
+            { id: 'genesis', x: 250, y: 500, reference: 'Genesis 1:1' },
+            { id: 'revelation', x: 950, y: 550, reference: 'Revelation 21:1' },
+            { id: 'psalm', x: 600, y: 150, reference: 'Psalm 23:1' },
+            { id: 'matthew', x: 600, y: 650, reference: 'Matthew 5:14' }
+        ];
+
+        const colors = ['#6366f1', '#a855f7', '#10b981', '#f59e0b', '#ef4444'];
+
+        // ==================== Initialize ====================
+        const svg = document.getElementById('canvas');
+        const versesGroup = document.getElementById('verses');
+        const animator = new CrossReferenceAnimator(svg, {
+            defaultColor: '#a78bfa',
+            glowRadius: 8
+        });
+
+        let selectedVerse = null;
+
+        // ==================== Create Verse Nodes ====================
+        verses.forEach(verse => {
+            const group = Utils.createSVGElement('g', {
+                class: 'verse-node',
+                id: `verse-${verse.id}`
+            });
+
+            const circle = Utils.createSVGElement('circle', {
+                cx: verse.x,
+                cy: verse.y,
+                r: 30,
+                fill: 'url(#verseGradient)',
+                stroke: '#a78bfa',
+                'stroke-width': 3
+            });
+
+            const text = Utils.createSVGElement('text', {
+                x: verse.x,
+                y: verse.y + 50,
+                'text-anchor': 'middle',
+                fill: '#e0e7ff',
+                'font-size': 16,
+                'font-weight': 600,
+                class: 'verse-label'
+            });
+            text.textContent = verse.reference;
+
+            group.appendChild(circle);
+            group.appendChild(text);
+            versesGroup.appendChild(group);
+
+            // Store reference to DOM element
+            verse.element = group;
+
+            // Click handler for interactive connection
+            group.addEventListener('click', () => {
+                if (!selectedVerse) {
+                    selectedVerse = verse;
+                    circle.setAttribute('stroke', '#fbbf24');
+                    circle.setAttribute('stroke-width', 5);
+                } else if (selectedVerse.id !== verse.id) {
+                    const color = colors[Math.floor(Math.random() * colors.length)];
+                    animator.connect(selectedVerse, verse, { color });
+                    
+                    // Reset first verse visual
+                    const firstCircle = selectedVerse.element.querySelector('circle');
+                    firstCircle.setAttribute('stroke', '#a78bfa');
+                    firstCircle.setAttribute('stroke-width', 3);
+                    
+                    selectedVerse = null;
+                } else {
+                    // Clicked same verse - deselect
+                    circle.setAttribute('stroke', '#a78bfa');
+                    circle.setAttribute('stroke-width', 3);
+                    selectedVerse = null;
+                }
+            });
+        });
+
+        // ==================== Button Handlers ====================
+        document.getElementById('animate1').addEventListener('click', async () => {
+            const john = verses.find(v => v.id === 'john');
+            const romans = verses.find(v => v.id === 'romans');
+            await animator.connect(john, romans, { color: '#6366f1' });
+        });
+
+        document.getElementById('animate2').addEventListener('click', async () => {
+            const genesis = verses.find(v => v.id === 'genesis');
+            const revelation = verses.find(v => v.id === 'revelation');
+            await animator.connect(genesis, revelation, { color: '#10b981' });
+        });
+
+        document.getElementById('animate3').addEventListener('click', async () => {
+            const psalm = verses.find(v => v.id === 'psalm');
+            const matthew = verses.find(v => v.id === 'matthew');
+            await animator.connect(psalm, matthew, { color: '#a855f7' });
+        });
+
+        document.getElementById('clearBtn').addEventListener('click', () => {
+            animator.clearConnections();
+        });
+
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            animator.resetView({ x: 0, y: 0, width: 1200, height: 800 });
+        });
+
+        // ==================== Demo Animation ====================
+        // Automatically show a demo after 1 second
+        setTimeout(async () => {
+            const john = verses.find(v => v.id === 'john');
+            const romans = verses.find(v => v.id === 'romans');
+            await animator.connect(john, romans, { color: '#6366f1' });
+        }, 1000);
+
+        // ==================== Disable buttons during animation ====================
+        const buttons = document.querySelectorAll('button:not(.clear):not(.reset)');
+        
+        const observer = new MutationObserver(() => {
+            buttons.forEach(btn => {
+                btn.disabled = animator.isAnimating;
+            });
+        });
+
+        // Note: This is a simple approach. In production, use proper state management
+        setInterval(() => {
+            buttons.forEach(btn => {
+                btn.disabled = animator.isAnimating;
+            });
+        }, 100);
+    </script>
+</body>
+</html>
+

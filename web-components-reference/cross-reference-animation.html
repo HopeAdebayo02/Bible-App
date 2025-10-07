@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Cross Reference Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0f0f1e;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        svg {
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            backdrop-filter: blur(10px);
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        button:active {
+            transform: translateY(0);
+        }
+
+        /* Verse node animations */
+        @keyframes pulse-glow-start {
+            0%, 100% {
+                filter: drop-shadow(0 0 10px rgba(99, 102, 241, 0.7));
+            }
+            50% {
+                filter: drop-shadow(0 0 25px rgba(99, 102, 241, 1));
+            }
+        }
+
+        @keyframes pulse-glow-end {
+            0% {
+                filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.7));
+            }
+            50% {
+                filter: drop-shadow(0 0 30px rgba(168, 85, 247, 1));
+            }
+            100% {
+                filter: drop-shadow(0 0 0 rgba(168, 85, 247, 0));
+            }
+        }
+
+        .verse-node.glow-start {
+            animation: pulse-glow-start 1s ease-in-out infinite;
+        }
+
+        .verse-node.glow-end {
+            animation: pulse-glow-end 1s ease-out forwards;
+        }
+
+        @media (max-width: 768px) {
+            .controls {
+                flex-direction: row;
+                flex-wrap: wrap;
+                top: auto;
+                bottom: 20px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            button {
+                padding: 10px 16px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg id="canvas" viewBox="0 0 1000 700">
+            <defs>
+                <!-- Glow filter for lines -->
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+                <!-- Strong glow for moving dot -->
+                <filter id="strong-glow" x="-100%" y="-100%" width="300%" height="300%">
+                    <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+
+                <!-- Radial gradient for verse nodes -->
+                <radialGradient id="verseGradient">
+                    <stop offset="0%" stop-color="#6366f1"/>
+                    <stop offset="100%" stop-color="#4f46e5"/>
+                </radialGradient>
+
+                <radialGradient id="verseGradientPurple">
+                    <stop offset="0%" stop-color="#a855f7"/>
+                    <stop offset="100%" stop-color="#9333ea"/>
+                </radialGradient>
+            </defs>
+
+            <g id="connections"></g>
+            <g id="verses"></g>
+        </svg>
+
+        <div class="controls">
+            <button onclick="animateConnection(0, 1, '#6366f1')">John → Romans</button>
+            <button onclick="animateConnection(2, 3, '#a855f7')">1 John → Ephesians</button>
+            <button onclick="animateConnection(0, 3, '#10b981')">John → Ephesians</button>
+            <button onclick="resetView()">Reset View</button>
+        </div>
+    </div>
+
+    <script>
+        // ==================== Configuration ====================
+        const verses = [
+            { id: 0, x: 250, y: 200, reference: 'John 3:16', color: '#6366f1' },
+            { id: 1, x: 750, y: 250, reference: 'Romans 5:8', color: '#6366f1' },
+            { id: 2, x: 300, y: 500, reference: '1 John 4:9', color: '#a855f7' },
+            { id: 3, x: 700, y: 480, reference: 'Ephesians 2:8', color: '#a855f7' }
+        ];
+
+        const svg = document.getElementById('canvas');
+        const versesGroup = document.getElementById('verses');
+        const connectionsGroup = document.getElementById('connections');
+
+        let currentViewBox = { x: 0, y: 0, width: 1000, height: 700 };
+        let animationInProgress = false;
+
+        // ==================== Easing Functions ====================
+        const easeInOutQuad = (t) => t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+        const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+        const easeInOutCubic = (t) => t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+        // ==================== Helper Functions ====================
+        function lerp(start, end, t) {
+            return start + (end - start) * t;
+        }
+
+        function generateCurvePath(x1, y1, x2, y2) {
+            const dx = x2 - x1;
+            const dy = y2 - y1;
+            const curvature = 0.25;
+            const controlX = (x1 + x2) / 2 + (-dy * curvature);
+            const controlY = (y1 + y2) / 2 + (dx * curvature);
+            return `M ${x1} ${y1} Q ${controlX} ${controlY} ${x2} ${y2}`;
+        }
+
+        function getPathLength(pathD) {
+            const tempPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            tempPath.setAttribute('d', pathD);
+            svg.appendChild(tempPath);
+            const length = tempPath.getTotalLength();
+            svg.removeChild(tempPath);
+            return length;
+        }
+
+        function distance(x1, y1, x2, y2) {
+            return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        }
+
+        // ==================== Animation Functions ====================
+        function animateViewBox(targetX, targetY, targetWidth, targetHeight, duration, easingFunc = easeInOutQuad) {
+            return new Promise(resolve => {
+                const startTime = performance.now();
+                const startVB = { ...currentViewBox };
+
+                function update(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const eased = easingFunc(progress);
+
+                    currentViewBox = {
+                        x: lerp(startVB.x, targetX, eased),
+                        y: lerp(startVB.y, targetY, eased),
+                        width: lerp(startVB.width, targetWidth, eased),
+                        height: lerp(startVB.height, targetHeight, eased)
+                    };
+
+                    svg.setAttribute('viewBox', 
+                        `${currentViewBox.x} ${currentViewBox.y} ${currentViewBox.width} ${currentViewBox.height}`
+                    );
+
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    } else {
+                        resolve();
+                    }
+                }
+
+                requestAnimationFrame(update);
+            });
+        }
+
+        function animatePath(pathElement, duration, color) {
+            return new Promise(resolve => {
+                const length = pathElement.getTotalLength();
+                pathElement.style.strokeDasharray = length;
+                pathElement.style.strokeDashoffset = length;
+
+                const startTime = performance.now();
+
+                // Create moving glow dot
+                const glowDot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                glowDot.setAttribute('r', '8');
+                glowDot.setAttribute('fill', color);
+                glowDot.setAttribute('filter', 'url(#strong-glow)');
+                glowDot.setAttribute('opacity', '0.9');
+                connectionsGroup.appendChild(glowDot);
+
+                function update(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const eased = easeInOutCubic(progress);
+
+                    pathElement.style.strokeDashoffset = length * (1 - eased);
+
+                    // Move glow dot along path
+                    const point = pathElement.getPointAtLength(length * eased);
+                    glowDot.setAttribute('cx', point.x);
+                    glowDot.setAttribute('cy', point.y);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(update);
+                    } else {
+                        // Fade out and remove glow dot
+                        glowDot.style.transition = 'opacity 0.3s';
+                        glowDot.style.opacity = '0';
+                        setTimeout(() => connectionsGroup.removeChild(glowDot), 300);
+                        resolve();
+                    }
+                }
+
+                requestAnimationFrame(update);
+            });
+        }
+
+        // ==================== Main Animation Function ====================
+        async function animateConnection(startId, endId, color = '#6366f1') {
+            if (animationInProgress) return;
+            animationInProgress = true;
+
+            const startVerse = verses[startId];
+            const endVerse = verses[endId];
+
+            const startNode = document.getElementById(`verse-${startId}`);
+            const endNode = document.getElementById(`verse-${endId}`);
+
+            try {
+                // Step 1: Zoom into starting verse
+                const zoomWidth = 400;
+                const zoomHeight = 280;
+                await animateViewBox(
+                    startVerse.x - zoomWidth / 2,
+                    startVerse.y - zoomHeight / 2,
+                    zoomWidth,
+                    zoomHeight,
+                    700,
+                    easeInOutQuad
+                );
+
+                // Step 2: Pulse glow on start verse
+                startNode.classList.add('glow-start');
+                await new Promise(resolve => setTimeout(resolve, 600));
+
+                // Step 3: Zoom out to show both verses
+                const dist = distance(startVerse.x, startVerse.y, endVerse.x, endVerse.y);
+                const padding = 200;
+                const viewWidth = dist + padding;
+                const viewHeight = viewWidth * 0.7;
+                const centerX = (startVerse.x + endVerse.x) / 2;
+                const centerY = (startVerse.y + endVerse.y) / 2;
+
+                await animateViewBox(
+                    centerX - viewWidth / 2,
+                    centerY - viewHeight / 2,
+                    viewWidth,
+                    viewHeight,
+                    600,
+                    easeOutCubic
+                );
+
+                // Step 4: Draw animated connection line
+                const pathD = generateCurvePath(
+                    startVerse.x, startVerse.y,
+                    endVerse.x, endVerse.y
+                );
+
+                const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                path.setAttribute('d', pathD);
+                path.setAttribute('stroke', color);
+                path.setAttribute('stroke-width', '3');
+                path.setAttribute('fill', 'none');
+                path.setAttribute('filter', 'url(#glow)');
+                path.setAttribute('opacity', '0.9');
+                path.setAttribute('stroke-linecap', 'round');
+                connectionsGroup.appendChild(path);
+
+                await animatePath(path, 1200, color);
+
+                // Step 5: Pulse glow on end verse
+                startNode.classList.remove('glow-start');
+                endNode.classList.add('glow-end');
+
+                // Make line permanent (faded)
+                path.style.strokeDasharray = 'none';
+                path.style.strokeDashoffset = '0';
+                path.setAttribute('opacity', '0.4');
+                path.setAttribute('stroke-width', '2');
+
+                await new Promise(resolve => setTimeout(resolve, 1000));
+                endNode.classList.remove('glow-end');
+
+                // Step 6: Reset view
+                await new Promise(resolve => setTimeout(resolve, 400));
+                await resetView();
+
+            } finally {
+                animationInProgress = false;
+            }
+        }
+
+        async function resetView() {
+            await animateViewBox(0, 0, 1000, 700, 800, easeOutCubic);
+        }
+
+        // ==================== Initialize Verses ====================
+        function initializeVerses() {
+            verses.forEach(verse => {
+                const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                group.setAttribute('class', 'verse-node');
+                group.setAttribute('id', `verse-${verse.id}`);
+
+                const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                circle.setAttribute('cx', verse.x);
+                circle.setAttribute('cy', verse.y);
+                circle.setAttribute('r', '30');
+                circle.setAttribute('fill', `url(#verseGradient${verse.color === '#a855f7' ? 'Purple' : ''})`);
+                circle.setAttribute('stroke', verse.color);
+                circle.setAttribute('stroke-width', '3');
+                circle.style.transition = 'all 0.3s ease';
+
+                const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                text.setAttribute('x', verse.x);
+                text.setAttribute('y', verse.y + 50);
+                text.setAttribute('text-anchor', 'middle');
+                text.setAttribute('fill', '#e0e7ff');
+                text.setAttribute('font-size', '16');
+                text.setAttribute('font-weight', '600');
+                text.textContent = verse.reference;
+
+                group.appendChild(circle);
+                group.appendChild(text);
+                versesGroup.appendChild(group);
+
+                // Add hover effect
+                group.addEventListener('mouseenter', () => {
+                    circle.setAttribute('r', '35');
+                    circle.style.filter = 'drop-shadow(0 0 15px rgba(99, 102, 241, 0.8))';
+                });
+
+                group.addEventListener('mouseleave', () => {
+                    circle.setAttribute('r', '30');
+                    circle.style.filter = 'none';
+                });
+            });
+        }
+
+        // Initialize on load
+        initializeVerses();
+
+        // Demo: Auto-play first animation after 1 second
+        setTimeout(() => {
+            animateConnection(0, 1, '#6366f1');
+        }, 1000);
+    </script>
+</body>
+</html>
+

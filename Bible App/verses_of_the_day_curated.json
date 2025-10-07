@@ -1,0 +1,1827 @@
+[
+  {
+    "day": 1,
+    "reference": "John 3:16",
+    "text": "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."
+  },
+  {
+    "day": 2,
+    "reference": "Romans 5:8",
+    "text": "But God demonstrates his own love for us in this: While we were still sinners, Christ died for us."
+  },
+  {
+    "day": 3,
+    "reference": "Ephesians 2:8-9",
+    "text": "For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast."
+  },
+  {
+    "day": 4,
+    "reference": "Romans 10:9",
+    "text": "If you declare with your mouth, 'Jesus is Lord,' and believe in your heart that God raised him from the dead, you will be saved."
+  },
+  {
+    "day": 5,
+    "reference": "John 14:6",
+    "text": "Jesus answered, 'I am the way and the truth and the life. No one comes to the Father except through me.'"
+  },
+  {
+    "day": 6,
+    "reference": "Acts 4:12",
+    "text": "Salvation is found in no one else, for there is no other name under heaven given to mankind by which we must be saved."
+  },
+  {
+    "day": 7,
+    "reference": "1 John 4:9",
+    "text": "This is how God showed his love among us: He sent his one and only Son into the world that we might live through him."
+  },
+  {
+    "day": 8,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 9,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 10,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 11,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 12,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 13,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 14,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 15,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 16,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 17,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 18,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 19,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 20,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 21,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 22,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 23,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 24,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 25,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 26,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 27,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 28,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 29,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 30,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 31,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 32,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 33,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 34,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 35,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 36,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 37,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 38,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 39,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 40,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 41,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 42,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 43,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 44,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 45,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 46,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 47,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 48,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 49,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 50,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 51,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 52,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 53,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 54,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 55,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 56,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 57,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 58,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 59,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 60,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 61,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 62,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 63,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 64,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 65,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 66,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 67,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 68,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 69,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 70,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 71,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 72,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 73,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 74,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 75,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 76,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 77,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 78,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 79,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 80,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 81,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 82,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 83,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 84,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 85,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 86,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 87,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 88,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 89,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 90,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 91,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 92,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 93,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 94,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 95,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 96,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 97,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 98,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 99,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 100,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 101,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 102,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 103,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 104,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 105,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 106,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 107,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 108,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 109,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 110,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 111,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 112,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 113,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 114,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 115,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 116,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 117,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 118,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 119,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 120,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 121,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 122,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 123,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 124,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 125,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 126,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 127,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 128,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 129,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 130,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 131,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 132,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 133,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 134,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 135,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 136,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 137,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 138,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 139,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 140,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 141,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 142,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 143,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 144,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 145,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 146,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 147,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 148,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 149,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 150,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 151,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 152,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 153,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 154,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 155,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 156,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 157,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 158,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 159,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 160,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 161,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 162,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 163,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 164,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 165,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 166,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 167,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 168,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 169,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 170,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 171,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 172,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 173,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 174,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 175,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 176,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 177,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 178,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 179,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 180,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 181,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 182,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 183,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 184,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 185,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 186,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 187,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 188,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 189,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 190,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 191,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 192,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 193,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 194,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 195,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 196,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 197,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 198,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 199,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 200,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 201,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 202,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 203,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 204,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 205,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 206,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 207,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 208,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 209,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 210,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 211,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 212,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 213,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 214,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 215,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 216,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 217,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 218,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 219,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 220,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 221,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 222,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 223,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 224,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 225,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 226,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 227,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 228,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 229,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 230,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 231,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 232,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 233,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 234,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 235,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 236,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 237,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 238,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 239,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 240,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 241,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 242,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 243,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 244,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 245,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 246,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 247,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 248,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 249,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 250,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 251,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 252,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 253,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 254,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 255,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 256,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 257,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 258,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 259,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 260,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 261,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 262,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 263,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 264,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 265,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 266,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 267,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 268,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 269,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 270,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 271,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 272,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 273,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 274,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 275,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 276,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 277,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 278,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 279,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 280,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 281,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 282,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 283,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 284,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 285,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 286,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 287,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 288,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 289,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 290,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 291,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 292,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 293,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 294,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 295,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 296,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 297,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 298,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 299,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 300,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 301,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 302,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 303,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 304,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 305,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 306,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 307,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 308,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 309,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 310,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 311,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 312,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 313,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 314,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 315,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 316,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 317,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 318,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 319,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 320,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 321,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 322,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 323,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 324,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 325,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 326,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 327,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 328,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 329,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 330,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 331,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 332,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 333,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 334,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 335,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 336,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 337,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 338,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 339,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 340,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 341,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 342,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 343,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 344,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 345,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 346,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 347,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 348,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 349,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 350,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 351,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 352,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 353,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 354,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 355,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  },
+  {
+    "day": 356,
+    "reference": "Jeremiah 29:11",
+    "text": "For I know the plans I have for you, declares the LORD, plans to prosper you and not to harm you, plans to give you hope and a future."
+  },
+  {
+    "day": 357,
+    "reference": "Matthew 11:28",
+    "text": "Come to me, all you who are weary and burdened, and I will give you rest."
+  },
+  {
+    "day": 358,
+    "reference": "Psalm 27:1",
+    "text": "The LORD is my light and my salvation—whom shall I fear? The LORD is the stronghold of my life—of whom shall I be afraid?"
+  },
+  {
+    "day": 359,
+    "reference": "Joshua 1:9",
+    "text": "Have I not commanded you? Be strong and courageous. Do not be afraid; do not be discouraged, for the LORD your God will be with you wherever you go."
+  },
+  {
+    "day": 360,
+    "reference": "Matthew 6:33",
+    "text": "But seek first his kingdom and his righteousness, and all these things will be given to you as well."
+  },
+  {
+    "day": 361,
+    "reference": "Psalm 23:1",
+    "text": "The LORD is my shepherd, I lack nothing."
+  },
+  {
+    "day": 362,
+    "reference": "Romans 8:28",
+    "text": "And we know that in all things God works for the good of those who love him, who have been called according to his purpose."
+  },
+  {
+    "day": 363,
+    "reference": "Proverbs 3:5-6",
+    "text": "Trust in the LORD with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight."
+  },
+  {
+    "day": 364,
+    "reference": "Isaiah 41:10",
+    "text": "So do not fear, for I am with you; do not be dismayed, for I am your God. I will strengthen you and help you; I will uphold you with my righteous right hand."
+  },
+  {
+    "day": 365,
+    "reference": "Philippians 4:13",
+    "text": "I can do all this through him who gives me strength."
+  }
+]

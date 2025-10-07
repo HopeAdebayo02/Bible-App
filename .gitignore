@@ -1,0 +1,29 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+**/xcuserdata/
+# SwiftPM
+.build/
+# Carthage
+Carthage/Build/
+# CocoaPods
+Pods/
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+# SwiftLint cache
+.swiftlint.yml
+.swiftlint_cache/
+# macOS
+.DS_Store
+# Archives
+*.xcarchive
+# Firebase / GoogleService-Info if applicable
+GoogleService-Info.plist
+# Env files
+*.env
+# Logs
+*.log

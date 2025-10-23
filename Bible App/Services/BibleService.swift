@@ -178,11 +178,16 @@ class BibleService {
         if verses.isEmpty {
             let sel = TranslationService.shared.version.uppercased()
             if sel == "ESV" {
-                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { return esv }
+                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false {
+                    return esv
+                } else {
+                    throw NSError(domain: "BibleService", code: 1002, userInfo: [
+                        NSLocalizedDescriptionKey: "Unable to load ESV verses. The ESV API is currently unavailable or returned no content for this passage."
+                    ])
+                }
             } else if sel == "NLT" {
-                // Only try NLT API - no fallback to API.Bible or public API
-                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { 
-                    return nlt 
+                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false {
+                    return nlt
                 } else {
                     throw NSError(domain: "BibleService", code: 1001, userInfo: [
                         NSLocalizedDescriptionKey: "Unable to load NLT verses. The NLT API is currently unavailable or returned no content for this passage."
@@ -226,10 +231,16 @@ class BibleService {
         if verses.isEmpty {
             let sel = version.uppercased()
             if sel == "ESV" {
-                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { return esv }
+                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false {
+                    return esv
+                } else {
+                    throw NSError(domain: "BibleService", code: 1002, userInfo: [
+                        NSLocalizedDescriptionKey: "Unable to load ESV verses. The ESV API is currently unavailable or returned no content for this passage."
+                    ])
+                }
             } else if sel == "NLT" {
-                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { 
-                    return nlt 
+                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false {
+                    return nlt
                 } else {
                     throw NSError(domain: "BibleService", code: 1001, userInfo: [
                         NSLocalizedDescriptionKey: "Unable to load NLT verses. The NLT API is currently unavailable or returned no content for this passage."
@@ -641,7 +652,16 @@ class BibleService {
                 }
             }
         }
-        // Collapse excessive whitespace only
+        
+        if let regex = try? NSRegularExpression(
+            pattern: #"\s*(?:Greek|Hebrew|Aramaic|Latin)\s+[^.]+?(?:also in|or|and|;)[^.]+?\."#,
+            options: [.caseInsensitive]
+        ) {
+            t = regex.stringByReplacingMatches(in: t, options: [], range: NSRange(location: 0, length: (t as NSString).length), withTemplate: "")
+        }
+        
+        t = t.replacingOccurrences(of: #"\s*\*\s*\d{1,3}:\d{0,3}\s*"#, with: " ", options: .regularExpression)
+        
         t = t.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
         t = t.trimmingCharacters(in: .whitespacesAndNewlines)
         return t

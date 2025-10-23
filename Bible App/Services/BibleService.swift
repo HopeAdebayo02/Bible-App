@@ -178,9 +178,14 @@ class BibleService {
         if verses.isEmpty {
             let sel = TranslationService.shared.version.uppercased()
             if sel == "ESV" {
-                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { return esv }
+                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { 
+                    return esv 
+                } else {
+                    throw NSError(domain: "BibleService", code: 1002, userInfo: [
+                        NSLocalizedDescriptionKey: "Unable to load ESV verses. The ESV API is currently unavailable or returned no content for this passage."
+                    ])
+                }
             } else if sel == "NLT" {
-                // Only try NLT API - no fallback to API.Bible or public API
                 if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { 
                     return nlt 
                 } else {
@@ -226,7 +231,13 @@ class BibleService {
         if verses.isEmpty {
             let sel = version.uppercased()
             if sel == "ESV" {
-                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { return esv }
+                if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { 
+                    return esv 
+                } else {
+                    throw NSError(domain: "BibleService", code: 1002, userInfo: [
+                        NSLocalizedDescriptionKey: "Unable to load ESV verses. The ESV API is currently unavailable or returned no content for this passage."
+                    ])
+                }
             } else if sel == "NLT" {
                 if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { 
                     return nlt 
@@ -618,16 +629,13 @@ class BibleService {
     }
 
     static func sanitize(text: String) -> String {
-        // Remove artifacts and normalize spaces while preserving punctuation for accuracy
         var t = text
-        // Drop explicit tokens like "line_break" and remove inline occurrences (case-insensitive)
         let lowered = t.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         if lowered == "line_break" { return "" }
         t = t.replacingOccurrences(of: "line_break", with: " ", options: [.caseInsensitive])
         t = t.replacingOccurrences(of: "[object Object]", with: "")
         t = t.replacingOccurrences(of: "\n", with: " ")
-        // Remove leading NLT disclaimer markers like "* 13:1 Verses ..." if present
-        // Use raw string to avoid Swift escape issues
+        
         if let regex = try? NSRegularExpression(
             pattern: #"^\s*\*?\s*(?:\d{1,3}:\d{1,3}\s*)?(?:(?:Verses|In Hebrew|Hebrew|Greek)\b).*?[—-]?\s*"#,
             options: [.caseInsensitive]
@@ -641,7 +649,16 @@ class BibleService {
                 }
             }
         }
-        // Collapse excessive whitespace only
+        
+        if let regex = try? NSRegularExpression(
+            pattern: #"\s*(?:Greek|Hebrew|Aramaic|Latin)\s+[^.]+?(?:also in|or|and|;)[^.]+?\."#,
+            options: [.caseInsensitive]
+        ) {
+            t = regex.stringByReplacingMatches(in: t, options: [], range: NSRange(location: 0, length: (t as NSString).length), withTemplate: "")
+        }
+        
+        t = t.replacingOccurrences(of: #"\s*\*\s*\d{1,3}:\d{0,3}\s*"#, with: " ", options: .regularExpression)
+        
         t = t.replacingOccurrences(of: "\\s+", with: " ", options: .regularExpression)
         t = t.trimmingCharacters(in: .whitespacesAndNewlines)
         return t

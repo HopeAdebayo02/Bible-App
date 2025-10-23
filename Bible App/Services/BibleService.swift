@@ -180,9 +180,14 @@ class BibleService {
             if sel == "ESV" {
                 if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { return esv }
             } else if sel == "NLT" {
-                // Try API.Bible provider first if configured, then legacy NLT API
-                if let nltApiBible = try? await fetchVersesFromAPIBible(bookId: bookId, chapter: chapter, translationId: Self.nltAPIBibleId()), nltApiBible.isEmpty == false { return nltApiBible }
-                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { return nlt }
+                // Only try NLT API - no fallback to API.Bible or public API
+                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { 
+                    return nlt 
+                } else {
+                    throw NSError(domain: "BibleService", code: 1001, userInfo: [
+                        NSLocalizedDescriptionKey: "Unable to load NLT verses. The NLT API is currently unavailable or returned no content for this passage."
+                    ])
+                }
             }
             if let fallback = try? await fetchVersesFromPublicAPI(bookId: bookId, chapter: chapter), fallback.isEmpty == false {
                 return fallback
@@ -219,13 +224,17 @@ class BibleService {
             chapter: chapter
         )
         if verses.isEmpty {
-            // Use the same fallback logic but scoped to requested version
             let sel = version.uppercased()
             if sel == "ESV" {
                 if let esv = try? await fetchVersesFromESV(bookId: bookId, chapter: chapter), esv.isEmpty == false { return esv }
             } else if sel == "NLT" {
-                if let nltApiBible = try? await fetchVersesFromAPIBible(bookId: bookId, chapter: chapter, translationId: Self.nltAPIBibleId()), nltApiBible.isEmpty == false { return nltApiBible }
-                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { return nlt }
+                if let nlt = try? await fetchVersesFromNLT(bookId: bookId, chapter: chapter), nlt.isEmpty == false { 
+                    return nlt 
+                } else {
+                    throw NSError(domain: "BibleService", code: 1001, userInfo: [
+                        NSLocalizedDescriptionKey: "Unable to load NLT verses. The NLT API is currently unavailable or returned no content for this passage."
+                    ])
+                }
             }
             if let fallback = try? await fetchVersesFromPublicAPI(bookId: bookId, chapter: chapter), fallback.isEmpty == false {
                 return fallback.map { BibleVerse(id: $0.id, book_id: $0.book_id, chapter: $0.chapter, verse: $0.verse, text: $0.text, version: version, heading: $0.heading) }
